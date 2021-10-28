@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JIT Tailwindcss with Vanillajs</title>
+
+    <!-- link css -->
+    <link rel="stylesheet" href="./build/styles.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="bg-gray-100 flex items-center px-12 py-4 text-black-pearl shadow"
+    >
+      <h2 class="font-bold text-lg mr-8">TailwindCSS</h2>
+      <ul class="flex space-x-4">
+        <li><a href="/">Home</a></li>
+        <li><a href="/switch-toggle.html">Switch/Toggle</a></li>
+      </ul>
+    </nav>
+    <!-- content -->
+    <main class="px-12 py-6 article-main">
+      <h2 class="font-bold text-lg">Color Schema Cards</h2>
+      <hr class="border-gray-400 mt-2 mb-4" />
+      <!-- Card Container: List of color schema -->
+      <section class="grid gap-x-8 gap-y-2 md:grid-cols-4 text-center">
+        <div
+          class="
+            p-8
+            cursor-pointer
+            shadow
+            rounded-lg
+            text-white
+            font-semibold
+            bg-blue-primary
+          "
+        >
+          <h4>#207DFF</h4>
+        </div>
+        <div
+          class="
+            p-8
+            cursor-pointer
+            shadow
+            rounded-lg
+            text-white
+            font-semibold
+            bg-green-primary
+          "
+        >
+          <h4>#00BD56</h4>
+        </div>
+        <div
+          class="
+            p-8
+            cursor-pointer
+            shadow
+            rounded-lg
+            text-black-pearl
+            font-semibold
+            bg-green-secondary
+          "
+        >
+          <h4>#85EF47</h4>
+        </div>
+        <div
+          class="
+            p-8
+            cursor-pointer
+            shadow
+            rounded-lg
+            text-black-pearl
+            font-semibold
+            bg-yellow-primary
+          "
+        >
+          <h4>#F9FD50</h4>
+        </div>
+      </section>
+      <!-- /Card Container: List of color schema -->
+    </main>
+    <!-- footer -->
+    <footer class="bg-black-pearl text-gray-300 px-12 py-6">
+      <h2 class="font-bold text-lg">Footer</h2>
+    </footer>
+  </body>
+</html>

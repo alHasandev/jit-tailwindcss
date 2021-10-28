@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JIT Tailwindcss with Vanillajs</title>
+
+    <!-- link css -->
+    <link rel="stylesheet" href="./build/styles.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="bg-gray-100 flex items-center px-12 py-4 text-black-pearl shadow"
+    >
+      <h2 class="font-bold text-lg mr-8">TailwindCSS</h2>
+      <ul class="flex space-x-4">
+        <li><a href="/">Home</a></li>
+        <li>
+          <a href="/switch-toggle.html">Switch/Toggle</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- content -->
+    <main class="px-12 py-6 article-main">
+      <h2 class="font-bold text-lg">Switch/Toggle Button</h2>
+      <hr class="border-gray-400 mt-2 mb-4" />
+      <!-- Card Container: List of color schema -->
+      <section class="flex flex-wrap justify-center">
+        <div class="p-8 shadow rounded-lg bg-white">
+          <label class="flex justify-between relative items-center group">
+            <span class="sr-only">Toggle Button</span>
+            <input
+              type="checkbox"
+              name=""
+              id=""
+              class="
+                appearance-none
+                peer
+                absolute
+                left-0
+                top-0
+                w-full
+                h-full
+                rounded-full
+              "
+            />
+            <span
+              class="
+                flex flex-shrink-0
+                items-center
+                w-16
+                bg-gray-100
+                p-1
+                rounded-full
+                shadow-inner
+                cursor-pointer
+                after:w-8
+                after:h-8
+                after:bg-white
+                after:rounded-full
+                after:shadow-md
+                duration-300
+                ease-in-out
+                after:duration-300
+                group-hover:after:translate-x-1
+                peer-checked:bg-blue-200 peer-checked:after:translate-x-6
+              "
+            ></span>
+          </label>
+        </div>
+      </section>
+      <!-- /Card Container: List of color schema -->
+    </main>
+    <!-- footer -->
+    <footer class="bg-black-pearl text-gray-300 px-12 py-6">
+      <h2 class="font-bold text-lg">Footer</h2>
+    </footer>
+  </body>
+</html>
